@@ -1,11 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #111;
-  background: #edeff0;
+  background: #edeff0 url("svg/background.svg");
+}
+
+body > svg {
+  display: none;
 }
 
 #container {
@@ -13,6 +21,7 @@ body {
   background: #fff;
   margin: 0 auto;
   height: 100%; /* new line */
+  padding: 0 20px;
 }
 
 p {
@@ -30,6 +39,14 @@ a {
 
 a:hover {
   color: #111;
+}
+
+a:hover .nav__svg {
+  fill: #111;
+}
+
+.nav__svg {
+  fill: #39add1;
 }
 
 header {
@@ -59,4 +76,48 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+/* * * */
+/* SVGs */
+/* * * */
+
+/* Logo */
+.logoText {
+  transition: display 0.5s ease-out;
+  /* opacity: 0; */
+  display: none;
+}
+
+/* Dog Stylings */
+.nose_and_eyes {
+  fill: #2d3339;
+}
+
+.brows {
+  fill: #da8058;
+}
+
+.white {
+  fill: #fbfeff;
+}
+
+.corgis {
+  display: flex;
+}
+
+.corgis div {
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media (min-width: 425px) {
+  h1 {
+    display: none;
+  }
+
+  .logoText {
+    /* opacity: 1.0; */
+    display: inline;
+  }
 }
