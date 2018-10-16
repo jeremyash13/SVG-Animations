@@ -102,6 +102,26 @@ footer {
   fill: #fbfeff;
 }
 
+.corgi1 {
+  fill:wheat;
+}
+
+.corgi2 {
+  fill:lightsalmon;
+}
+
+.corgi3 {
+  fill:sienna;
+}
+
+.corgi4 {
+  fill:#52595F;
+}
+
+svg text {
+  fill: #ba8058;
+}
+
 .corgis {
   display: flex;
 }
